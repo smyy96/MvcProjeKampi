@@ -1,5 +1,2 @@
 # MvcProjeKampi
-<p align="center">
-  <img src="your_relative_path_here" width="350" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
-</p>
+![Ekran Alıntısı](https://user-images.githubusercontent.com/62007900/118485864-9a921200-b721-11eb-82b3-35a6999eaf24.JPG)
