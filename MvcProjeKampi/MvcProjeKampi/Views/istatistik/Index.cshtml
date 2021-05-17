@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>İSTATİSTİK ÖDEV</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-info">
+                        <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Toplam Kategori</span>
+                            <br />
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-description" style="font-size:50px; font-weight:bold;text-align:center">
+                                @ViewBag.ct
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-success">
+                        <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">"yazılım" kategorisine <br />ait başlık sayısı</span>
+                            
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-description" style="font-size:50px; font-weight:bold;text-align:center ">
+                                @ViewBag.ct2
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-warning">
+                        <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Yazar adında 'a' harfi <br />geçen yazar sayısı</span>
+                            
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-description" style="font-size:50px; font-weight:bold;text-align:center">
+                                @ViewBag.ct3
+                            </span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-danger">
+                        <span class="info-box-icon"><i class="fas fa-comments"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text"><br />En fazla başlıga sahip kategori</span>
+
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-description" style="font-size:50px; font-weight:bold;text-align:center">
+                                @ViewBag.ct4
+                            </span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-pink">
+                        <span class="info-box-icon"><i class="fas fa-comments"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Kategori tablosunda durumu<br /> true olan kategoriler<br /> ile false olan kategoriler<br /> arasındaki sayısal fark</span>
+
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-description" style="font-size:50px; font-weight:bold;text-align:center">
+                                @ViewBag.ct5
+                            </span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
